@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Book an Appointment</title>
-  <link rel="stylesheet" href="style.css"
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fancy font for logo -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
+
 <body>
-     <!-- Navigation Bar -->
+  <!-- Navigation Bar -->
   <header class="navbar">
     <div class="navbar-container">
       <div class="logo">
@@ -28,6 +33,7 @@
     </div>
   </header>
 
+  <!-- Appointment Form -->
   <div class="form-container">
     <h2>This appointment is for:</h2>
     <div class="client-type">
@@ -54,11 +60,9 @@
 
       <div class="row">
         <div>
-          <label for="date1">Add a Preferred Date*</label>
+          <label for="appointmentDate">Add a Preferred Date*</label>
           <input type="text" id="appointmentDate" required>
-
         </div>
-        
       </div>
 
       <div class="row">
@@ -97,19 +101,10 @@
     </form>
   </div>
 
+  <!-- Flatpickr JS -->
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <script>
-  flatpickr("#appointmentDate", {
-    enableTime: true,
-    dateFormat: "Y-m-d H:i",
-    minDate: "today"
-  });
 
-  function updateCharCount() {
-    const text = document.getElementById("reason").value;
-    document.getElementById("charCount").innerText = text.length;
-  }
-</script>
-
+  <!-- Local Script -->
+  <script src="main.js"></script>
 </body>
 </html>
