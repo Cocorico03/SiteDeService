@@ -1,55 +1,27 @@
-/* Reset and full-screen layout */
+/* ===============================
+   Reset & Base Styles
+================================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
+html, body {
   height: 100%;
   font-family: 'Segoe UI', sans-serif;
+  background-color: #f0c7f5;
 }
 
-/* Background image section */
-.background-section {
-  height: 100vh;
-  background: url('./background2.jpg') no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 60px;
-}
-
-/* Wrapper for image and button */
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Centered Image Styling */
-.content-wrapper img {
-  width: 350px;
-  height: 350px;
-  object-fit: contain;
-  opacity: 0.9;
-  filter: 
-    brightness(75%)
-    contrast(90%)
-    saturate(150%)
-    hue-rotate(-30deg)
-    drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
-  margin-bottom: 20px;
-}
-
-/* Navbar styling */
+/* ===============================
+   Navbar
+================================= */
 .navbar {
   border: 3px solid rgb(190, 122, 198);
   background-color: rgb(190, 122, 198);
   padding: 10px 20px;
 }
 
-/* Navbar internal layout */
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -57,7 +29,6 @@ body, html {
   width: 100%;
 }
 
-/* Logo styling */
 .logo {
   display: flex;
   align-items: center;
@@ -74,7 +45,6 @@ body, html {
   font-weight: 700;
 }
 
-/* Navigation menu */
 .navbar nav {
   display: flex;
   gap: 30px;
@@ -92,18 +62,133 @@ body, html {
   text-decoration: underline;
 }
 
-/* Button styling */
+/* ===============================
+   Homepage Background Section
+================================= */
+.background-section {
+  height: 100vh;
+  background: url('./background2.jpg') no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-wrapper img {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  opacity: 0.9;
+  filter:
+    brightness(75%)
+    contrast(90%)
+    saturate(150%)
+    hue-rotate(-30deg)
+    drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   Appointment Form
+================================= */
+.form-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: rgb(228, 169, 231);
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.client-type {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.client-type label {
+  background-color: #f0c7f5;
+  border: 2px solid #ccc;
+  padding: 15px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.client-type input[type="radio"] {
+  accent-color: #8a2be2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.row > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.char-count {
+  font-size: 12px;
+  text-align: right;
+  color: #666;
+}
+
+/* ===============================
+   Buttons
+================================= */
 .appointment-button {
   background-color: #d097d6;
   color: black;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
-  padding: 20px 40px;
+  padding: 14px 28px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   box-shadow: 0 4px 0 #a85ca7;
   transition: all 0.2s ease;
+  width: fit-content;
 }
 
 .appointment-button:active {

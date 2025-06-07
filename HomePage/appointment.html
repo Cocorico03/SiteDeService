@@ -4,111 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Book an Appointment</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0c7f5;
-      margin: 0;
-      padding: 0;
-    }
+  <link rel="stylesheet" href="style.css"
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-    .form-container {
-      max-width: 800px;
-      margin: 50px auto;
-      background: rgb(228, 169, 231);
-      padding: 30px 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
-
-    .form-container h2 {
-      margin-bottom: 20px;
-      font-size: 24px;
-    }
-
-    .client-type {
-      display: flex;
-      gap: 20px;
-      margin-bottom: 30px;
-    }
-
-    .client-type label {
-      background-color: #f0c7f5;
-      border: 2px solid #ccc;
-      padding: 15px 25px;
-      border-radius: 8px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .client-type input[type="radio"] {
-      accent-color: #8a2be2;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .row {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .row > div {
-      flex: 1;
-      min-width: 200px;
-    }
-
-    label {
-      font-weight: 600;
-      margin-bottom: 5px;
-      display: block;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 12px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
-
-    .appointment-button {
-      background-color: #d097d6;
-      color: black;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 14px 28px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      box-shadow: 0 4px 0 #a85ca7;
-      transition: all 0.2s ease;
-      width: fit-content;
-    }
-
-    .appointment-button:active {
-      transform: translateY(2px);
-      box-shadow: 0 2px 0 #a85ca7;
-    }
-
-    .char-count {
-      font-size: 12px;
-      text-align: right;
-      color: #666;
-    }
-  </style>
 </head>
 <body>
      <!-- Navigation Bar -->
@@ -121,7 +21,7 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="#">About Us</a>
-        <a href="#">Services</a>
+        <a href="services.html">Services</a>
         <a href="#">Portfolio</a>
         <a href="#">Contact</a>
       </nav>
@@ -155,7 +55,8 @@
       <div class="row">
         <div>
           <label for="date1">Add a Preferred Date*</label>
-          <input type="date" id="date1" required>
+          <input type="text" id="appointmentDate" required>
+
         </div>
         
       </div>
@@ -196,12 +97,19 @@
     </form>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script>
-    function updateCharCount() {
-      const text = document.getElementById("reason").value;
-      document.getElementById("charCount").innerText = text.length;
-    }
-  </script>
+  flatpickr("#appointmentDate", {
+    enableTime: true,
+    dateFormat: "Y-m-d H:i",
+    minDate: "today"
+  });
+
+  function updateCharCount() {
+    const text = document.getElementById("reason").value;
+    document.getElementById("charCount").innerText = text.length;
+  }
+</script>
 
 </body>
 </html>
