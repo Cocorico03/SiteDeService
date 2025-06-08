@@ -1,46 +1,51 @@
-/* Make the wrapper full screen */
+/* Wrapper */
 .services-wrapper {
-  background-color: #d8aee0;
-  min-height: 100vh;          /* Full height of viewport */
-  width: 100vw;               /* Full width of viewport */
-  padding: 3rem;
+  background-color: #e0c4e6;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 3rem 5vw;
   font-family: Arial, sans-serif;
   color: black;
   box-sizing: border-box;
 }
 
-/* Center the heading */
+/* Heading */
 .services-wrapper h2 {
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 2.8rem;
+  font-weight: bold;
 }
 
-/* Style for each item */
+/* Each row */
 .service-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 2rem;
-  gap: 2rem;
+  justify-content: flex-start;
   width: 100%;
+  max-width: 1300px;
+  margin: 0 auto 2.5rem auto;
+  gap: 2rem;
 }
 
-/* Make image a bit larger and responsive */
+/* Images */
 .service-img {
-  width: 140px;
-  height: 140px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0;
 }
 
-/* Text styling */
+/* Service title (bold and larger) */
 .service-item h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
+/* Service description (bigger text) */
 .service-item p {
-  max-width: 1000px;
-  line-height: 1.6;
+  font-size: 1.5rem;
+  line-height: 1.7;
 }
