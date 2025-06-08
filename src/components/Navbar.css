@@ -1,0 +1,38 @@
+/* Fancy font for logo-text*/
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+   /* General style of Navbar*/ 
+    .MyNavbar {
+      background-color: #b76eb7;
+      padding: 10px 20px;
+    }
+
+/* Style of logo*/ 
+.logo-text {
+  font-family: 'Great Vibes', cursive;
+  color: dark;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Style of Elements of Navbar*/ 
+.navbar-nav .nav-link {
+  font-weight: bold;
+  gap: 30px;
+  display: flex;
+  margin: 0 15px;
+  justify-content: space-between;
+
+
+  color: rgb(0, 0, 0) !important;
+  
+}
+
+/* Hover: underline*/ 
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-nav .nav-link.active {
+  border-bottom: 2px solid dark;
+}
