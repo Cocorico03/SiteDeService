@@ -7,18 +7,29 @@ import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contacts';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <Navbar/>
-      <Routes>
-        <Route path='/Home' element={<Home />}/>
-        <Route path='/AboutUs' element={<AboutUs/>}/>
-        <Route path='/Services' element={<Services/>}/>
-        <Route path='/Portfolio' element={<Portfolio/>}/>
-        <Route path='/Contacts' element={<Contact/>}/>
-      </Routes>
+      <div className='page-container'>
+        <Navbar/>
+        <main className='content-wrap'>
+            <Routes>
+              <Route path='/Home' element={<Home />}/>
+              <Route path='/AboutUs' element={<AboutUs/>}/>
+              <Route path='/Services' element={<Services/>}/>
+              <Route path='/Portfolio' element={<Portfolio/>}/>
+              <Route path='/Contacts' element={<Contact/>}/>
+          </Routes>
+        </main>
+
+
+      <Footer/>
+
+      </div>
+  
     </Router>
   )
 }

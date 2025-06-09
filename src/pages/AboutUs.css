@@ -1,7 +1,43 @@
-    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 .AboutUsHeading{
 
-    font-family: 'Great Vibes', cursive;
-    font-weight: 500;
+    font-weight: bolder;
+    font-size: 60px;
+    margin-bottom: 80px;
+}
 
+.Hero-SectionTeam{
+
+}
+.img_team{
+    width: 600px;
+    border-radius: 30%;
+    margin-top: 60px;
+}
+
+.img_story{
+    width: 600px;
+    border-radius: 30%;
+}
+.Hero-SectionStory{
+    margin-bottom: 100px;
+
+}
+.aboutUs_content{
+    text-align: justify;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+.Text{
+    font-size: 22px;
+    text-align: justify;
+}
+.HeadStory{
+    font-size: 30px;
+}
+.HeadTeam{
+    font-size: 30px;
+}
+.AboutUsHeading{
+    font-size: 45px;
 }
