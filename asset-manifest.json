@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/SiteDeService/static/css/main.74496c0c.css",
+    "main.js": "/SiteDeService/static/js/main.dab230e4.js",
+    "static/media/treatment.jpg": "/SiteDeService/static/media/treatment.e327ff42aef4c2613a33.jpg",
+    "static/media/coloring.jpg": "/SiteDeService/static/media/coloring.b0de8918d6e69dcb94cf.jpg",
+    "static/media/TeamPic.jpg": "/SiteDeService/static/media/TeamPic.4d05b365dc84b6694f74.jpg",
+    "static/media/styling.jpg": "/SiteDeService/static/media/styling.d2494883d3bfaf5ea97d.jpg",
+    "static/media/PicEVT1.jpg": "/SiteDeService/static/media/PicEVT1.2ca35fb1161a61c7d6c7.jpg",
+    "static/media/Easy.jpg": "/SiteDeService/static/media/Easy.e6f59c89e20e3d20ec84.jpg",
+    "static/media/braids.png": "/SiteDeService/static/media/braids.e4931cfed2bacceef8a2.png",
+    "static/media/CoiffeSimple.jpg": "/SiteDeService/static/media/CoiffeSimple.b937e0f18013599fab37.jpg",
+    "static/media/CUT1.jpg": "/SiteDeService/static/media/CUT1.7ce03b1500d50349b02d.jpg",
+    "static/media/shampoo.jpg": "/SiteDeService/static/media/shampoo.a8fbdabda90a546d3832.jpg",
+    "static/media/haircut.jpg": "/SiteDeService/static/media/haircut.dd3a4e7580d4018bae63.jpg",
+    "static/media/Braids.jpg": "/SiteDeService/static/media/Braids.896dd65001da2387cda1.jpg",
+    "static/media/BraidsO.jpg": "/SiteDeService/static/media/BraidsO.643359ccfde4935ca7cb.jpg",
+    "static/media/COLOR.jpg": "/SiteDeService/static/media/COLOR.b032708efc2a52dba277.jpg",
+    "static/media/AboutUsPic.jpg": "/SiteDeService/static/media/AboutUsPic.a9e0d358053062cc6d0a.jpg",
+    "static/media/BRAIDS3.jpg": "/SiteDeService/static/media/BRAIDS3.21d826a954a5bf7f3010.jpg",
+    "static/media/ColorationCheveuxAfro.jpg": "/SiteDeService/static/media/ColorationCheveuxAfro.12f46203590f33fe11b8.jpg",
+    "static/media/EVt.jpg": "/SiteDeService/static/media/EVt.5f8c61ac8220b1717867.jpg",
+    "static/media/HairSimple.jpg": "/SiteDeService/static/media/HairSimple.835ff42458496ecd6c78.jpg",
+    "static/media/CouleurE.jpg": "/SiteDeService/static/media/CouleurE.721ac608bc1c41a8cbf7.jpg",
+    "static/media/logo.png": "/SiteDeService/static/media/logo.3e6a5932c91e8487441c.png",
+    "static/media/background.jpg": "/SiteDeService/static/media/background.c5fad5f6ca3e7c70a140.jpg",
+    "static/media/overlayImage.jpg": "/SiteDeService/static/media/overlayImage.250597262f1d9a76b581.jpg",
+    "index.html": "/SiteDeService/index.html",
+    "main.74496c0c.css.map": "/SiteDeService/static/css/main.74496c0c.css.map",
+    "main.dab230e4.js.map": "/SiteDeService/static/js/main.dab230e4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74496c0c.css",
+    "static/js/main.dab230e4.js"
+  ]
+}
